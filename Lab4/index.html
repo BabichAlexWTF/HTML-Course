@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор</title>
+  <style>
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      background-color: #444444;
+      border-radius: 15px;
+      padding: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      font-family: Calibri, Arial, sans-serif;
+    }
+
+    .display {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 50px;
+      background-color: #444444;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      font-size: 40px;
+      
+      color: #ffffff;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+
+    .button {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      background-color: #727272;
+      border-radius: 0px;
+      font-size: 24px;
+      color: #ffffff;
+      cursor: pointer;
+      margin-right: 2px;
+    }
+
+    .button.orange {
+      background-color: orange;
+      color: #fff;
+    }
+    .button.orange_1 {
+      background-color: orange;
+      color: #fff;
+      border-radius: 0px 0px 10px 0px;
+    }
+    .button.large {
+      flex: 2;
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    .button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="button-row">
+      <div class="button">AC</div>
+      <div class="button">+/-</div>
+      <div class="button">%</div>
+      <div class="button orange">÷</div>
+    </div>
+    <div class="button-row">
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button orange">x</div>
+    </div>
+    <div class="button-row">
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button orange">-</div>
+    </div>
+    <div class="button-row">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button orange">+</div>
+    </div>
+    <div class="button-row">
+      <div class="button large">0</div>
+      <div class="button">.</div>
+      <div class="button orange_1">=</div>
+    </div>
+  </div>
+</body>
+</html>
